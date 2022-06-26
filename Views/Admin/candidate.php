@@ -241,9 +241,7 @@ if(isset($_POST['delete'])){
                     <div class="card shadow" style="background-color: rgb(239,239,241);">
                         <div style="display:inline;" class="card-header py-3"><button class="btn btn-primary" type="button"
                                 onclick="Fun_show1()">New</button>
-                                <button class="btn btn-primary" type="button"
-                                                    style="margin-right: 10px;"
-                                                    onclick="Fun_show3()">Edit</button>
+                                 
                             <p class="text-primary m-0 font-weight-bold"></p>
                         </div>
 
@@ -339,55 +337,7 @@ if(isset($_POST['delete'])){
                             </div>
 
 
-                            <div id="edit2" style="
-                        display:none;
-                        height: 210px;
-                        width:900px;
-                        position:fixed;
-                          top:100px;
-                          left:250px;
-                          background-color: white;
-                          box-shadow: 10px 10px 10px 0px gray;
-                        ">
-                                <form method="POST" action="candidate.php">
-                                    <h3 style=" margin-left: 10px;">Edit Candidate</h3>
-                                    <hr>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th style="margin-left: 10px; color: rgb(6,34,242);  ">First_Name</th>
-                                                <th style=" margin-left: 10px;color: rgb(4,33,251);">Last_Name</th>
-                                                <th style=" margin-left: 10px;color: rgb(8,35,238);">Election</th>
-
-
-                                            </tr>
-
-                                        </thead>
-                              <?php  foreach ($candidates as $cand): ?>
-                                        <tbody style=" margin-left: 10px;">
-                                            <tr>
-                                                <td><input class="form-control form-control-user" type="text" name="FName"
-                                                        placeholder="First Name" value="<?=$cand['FirstName']?>" > </input></td>
-
-                                                <td><input class="form-control form-control-user" type="text"
-                                                        placeholder="Last Name" name="LName" value="<?=$cand['LastName']?>"> </input></td>
-                                                 
-                                                <td><input class="form-control form-control-user" name="EId" type="text" value="<?=$cand['ElectionId']?>">
-                                                    </input></td>
-
-
-                                            </tr>
-                                            <?php endforeach ?>
-                                        </tbody>
-
-                                    </table>
-
-                                    <hr>
-                                    <button class="btn btn-primary" role="button"
-                                        style="color: rgb(252,252,252); margin-left: 10px;" type="submit" name="update"
-                                        onclick="Fun_hide2()">Update</button>
-                                </form>
-                            </div>
+                         
                              
                             
 
