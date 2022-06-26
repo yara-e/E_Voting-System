@@ -278,8 +278,7 @@ if(isset($_POST['update'])){
                                             <td><input class="form-control form-control-user" type="text"
                                                     placeholder="Name" name="Name"> </input></td>
 
-                                            <td><input class="form-control form-control-user" type="text"
-                                                    placeholder="id" name="Id"> </input></td>
+                                            
                                             <td><input class="form-control form-control-user" type="text"
                                                     placeholder="Id"name="Admin_Id"> </input></td>
                                             <td><input class="form-control form-control-user" type="date"
